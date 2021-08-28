@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "265955188946",
+    "firebase_url": "https://handdesafioauth-default-rtdb.firebaseio.com",
+    "project_id": "handdesafioauth",
+    "storage_bucket": "handdesafioauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265955188946:android:5eca5eea2c7cf45af5cd0b",
+        "android_client_info": {
+          "package_name": "com.desafio.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265955188946-nvd9d1ugfad000g9ttn2vdi8i74630on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRUXM0a-yhahHpQkQsCSAbO4aweDCLbE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265955188946-nvd9d1ugfad000g9ttn2vdi8i74630on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
