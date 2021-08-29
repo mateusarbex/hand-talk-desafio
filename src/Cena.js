@@ -55,8 +55,8 @@ export default function Cena({ navigation }) {
       setSelected("Selecione um objeto");
     } catch (err) {
       setSelected("Aplique as cores");
-      setLoad(false);
     }
+    setLoad(false);
   }
   async function handleSubmitColors() {
     setSelected("Atribuindo ao usuário...");
