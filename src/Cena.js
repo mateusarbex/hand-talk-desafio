@@ -45,14 +45,18 @@ export default function Cena({ navigation }) {
   async function getColors() {
     setLoad(true);
     setSelected("Carregando as cores...");
-    const userId = await AsyncStorage.getItem("uid");
 
-    const response = await database.get(userId);
-    for (let geo in response.toJSON()[userId]) {
-      setGeoColor(geo, response.toJSON()[userId][geo]);
+    try {
+      const userId = await AsyncStorage.getItem("uid");
+      const response = await database.get(userId);
+      for (let geo in response.toJSON()[userId]) {
+        setGeoColor(geo, response.toJSON()[userId][geo]);
+      }
+      setSelected("Selecione um objeto");
+    } catch (err) {
+      setSelected("Aplique as cores");
+      setLoad(false);
     }
-    setSelected("Selecione um objeto");
-    setLoad(false);
   }
   async function handleSubmitColors() {
     setSelected("Atribuindo ao usuário...");
